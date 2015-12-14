@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F02612D91B17C02A004EDF58 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F02612D81B17C02A004EDF58 /* CoreFoundation.framework */; };
+		F02612DB1B17C03B004EDF58 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F02612DA1B17C03B004EDF58 /* IOKit.framework */; };
+		F04992031C1F67A4004EDF58 /* USBUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = F04992011C1F67A4004EDF58 /* USBUtil.c */; };
+		F04992041C1F67A4004EDF58 /* USBUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F04992021C1F67A4004EDF58 /* USBUtil.h */; };
+		F058861E1BB0ADFE004EDF58 /* x2USBFocus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F058861C1BB0ADFE004EDF58 /* x2USBFocus.cpp */; };
+		F058861F1BB0ADFE004EDF58 /* x2USBFocus.h in Headers */ = {isa = PBXBuildFile; fileRef = F058861D1BB0ADFE004EDF58 /* x2USBFocus.h */; };
+		F07436771B17054F004EDF58 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F07436731B17054F004EDF58 /* main.cpp */; };
+		F07436781B17054F004EDF58 /* main.h in Headers */ = {isa = PBXBuildFile; fileRef = F07436741B17054F004EDF58 /* main.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F02612D81B17C02A004EDF58 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		F02612DA1B17C03B004EDF58 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		F04992011C1F67A4004EDF58 /* USBUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = USBUtil.c; sourceTree = "<group>"; };
+		F04992021C1F67A4004EDF58 /* USBUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBUtil.h; sourceTree = "<group>"; };
+		F058861C1BB0ADFE004EDF58 /* x2USBFocus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = x2USBFocus.cpp; sourceTree = "<group>"; };
+		F058861D1BB0ADFE004EDF58 /* x2USBFocus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x2USBFocus.h; sourceTree = "<group>"; };
+		F074366C1B1704FD004EDF58 /* libX2USBFocus.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libX2USBFocus.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		F07436731B17054F004EDF58 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F07436741B17054F004EDF58 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F07436691B1704FD004EDF58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F02612DB1B17C03B004EDF58 /* IOKit.framework in Frameworks */,
+				F02612D91B17C02A004EDF58 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F07436631B1704FD004EDF58 = {
+			isa = PBXGroup;
+			children = (
+				F04992011C1F67A4004EDF58 /* USBUtil.c */,
+				F04992021C1F67A4004EDF58 /* USBUtil.h */,
+				F02612DA1B17C03B004EDF58 /* IOKit.framework */,
+				F02612D81B17C02A004EDF58 /* CoreFoundation.framework */,
+				F07436731B17054F004EDF58 /* main.cpp */,
+				F058861C1BB0ADFE004EDF58 /* x2USBFocus.cpp */,
+				F058861D1BB0ADFE004EDF58 /* x2USBFocus.h */,
+				F07436741B17054F004EDF58 /* main.h */,
+				F074366D1B1704FD004EDF58 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F074366D1B1704FD004EDF58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F074366C1B1704FD004EDF58 /* libX2USBFocus.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F074366A1B1704FD004EDF58 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F07436781B17054F004EDF58 /* main.h in Headers */,
+				F058861F1BB0ADFE004EDF58 /* x2USBFocus.h in Headers */,
+				F04992041C1F67A4004EDF58 /* USBUtil.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F074366B1B1704FD004EDF58 /* X2USBFocus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F07436701B1704FD004EDF58 /* Build configuration list for PBXNativeTarget "X2USBFocus" */;
+			buildPhases = (
+				F07436681B1704FD004EDF58 /* Sources */,
+				F07436691B1704FD004EDF58 /* Frameworks */,
+				F074366A1B1704FD004EDF58 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = X2USBFocus;
+			productName = X2EFW1Filter;
+			productReference = F074366C1B1704FD004EDF58 /* libX2USBFocus.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F07436641B1704FD004EDF58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = ando;
+				TargetAttributes = {
+					F074366B1B1704FD004EDF58 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = F07436671B1704FD004EDF58 /* Build configuration list for PBXProject "X2USBFocus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F07436631B1704FD004EDF58;
+			productRefGroup = F074366D1B1704FD004EDF58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F074366B1B1704FD004EDF58 /* X2USBFocus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F07436681B1704FD004EDF58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F058861E1BB0ADFE004EDF58 /* x2USBFocus.cpp in Sources */,
+				F04992031C1F67A4004EDF58 /* USBUtil.c in Sources */,
+				F07436771B17054F004EDF58 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F074366E1B1704FD004EDF58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"SB_MAC_BUILD=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F074366F1B1704FD004EDF58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F07436711B1704FD004EDF58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(X2Framework)/filterwheelplugins/x2filterwheel",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = X2USBFocus;
+			};
+			name = Debug;
+		};
+		F07436721B1704FD004EDF58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(X2Framework)/filterwheelplugins/x2filterwheel",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = X2USBFocus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F07436671B1704FD004EDF58 /* Build configuration list for PBXProject "X2USBFocus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F074366E1B1704FD004EDF58 /* Debug */,
+				F074366F1B1704FD004EDF58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F07436701B1704FD004EDF58 /* Build configuration list for PBXNativeTarget "X2USBFocus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F07436711B1704FD004EDF58 /* Debug */,
+				F07436721B1704FD004EDF58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F07436641B1704FD004EDF58 /* Project object */;
+}
